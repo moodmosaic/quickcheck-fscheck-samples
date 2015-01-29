@@ -1,4 +1,4 @@
-module GettingStarted (main, spec) where
+module GettingStartedSpec (main, spec) where
 
 import Test.Hspec
 import Test.QuickCheck
