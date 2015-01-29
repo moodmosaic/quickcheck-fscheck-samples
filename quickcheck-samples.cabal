@@ -1,0 +1,23 @@
+Name:                   samples-quickcheck
+Version:                0.0.0
+Cabal-Version:          >= 1.10
+Build-Type:             Simple
+
+Library
+  Default-Language:     Haskell2010
+  HS-Source-Dirs:       tests
+  GHC-Options:          -Wall
+  Exposed-Modules:      GettingStarted
+  Build-Depends:        base >= 4 && < 5
+                      , hspec
+                      , QuickCheck
+
+Test-Suite spec
+  Type:                 exitcode-stdio-1.0
+  Default-Language:     Haskell2010
+  Hs-Source-Dirs:       tests
+  Ghc-Options:          -Wall
+  Main-Is:              Spec.hs
+  Build-Depends:        base >= 4 && < 5
+                      , hspec
+                      , QuickCheck
