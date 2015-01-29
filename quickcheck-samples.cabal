@@ -20,3 +20,12 @@ Test-Suite spec
   Build-Depends:        base
                       , hspec
                       , QuickCheck
+
+Test-Suite style
+  Type:                 exitcode-stdio-1.0
+  Default-Language:     Haskell2010
+  Hs-Source-Dirs:       tests
+  Ghc-Options:          -Wall
+  Main-Is:              HLint.hs
+  Build-Depends:        base
+                      , hlint == 1.*
