@@ -1,10 +1,7 @@
-module GettingStartedSpec (main, spec) where
+module GettingStartedSpec (spec) where
 
 import Test.Hspec
 import Test.QuickCheck
-
-main :: IO ()
-main = hspec spec
 
 spec :: Spec
 spec = do
