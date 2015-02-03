@@ -1,0 +1,5 @@
+
+    source https://nuget.org/api/v2
+    nuget FsCheck.Xunit
+    nuget FAKE
+    nuget xunit.runners
