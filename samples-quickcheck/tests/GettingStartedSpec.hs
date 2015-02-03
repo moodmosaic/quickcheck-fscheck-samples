@@ -1,13 +1,13 @@
 module GettingStartedSpec (spec) where
 
 import Test.Hspec
-import Test.QuickCheck
+import Test.Hspec.QuickCheck
 
 spec :: Spec
 spec = do
     describe "icebreaker" $ do
-        it "someFunction" $ do
-            property someFunction
+        prop "icebreaker" $ \x y ->
+            add x y == add y x
 
-someFunction :: Bool -> Bool -> Property
-someFunction x y = x == y ==> x == y
+add :: Int -> Int -> Int
+add x y = x + y
