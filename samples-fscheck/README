@@ -1,0 +1,28 @@
+# Step-by-step FsCheck setup in F#
+
+### Usage ###
+
+Run `fsi.exe` and specify the filename of the script, so that F# interactive reads the code and executes the script in real time:
+
+```
+fsi samples-fscheck.fsx
+```
+
+-----
+
+### Appendix ###
+
+#### Why not `#load` the script inside F# interactive?####
+
+Loading the script inside an F# interactive session *can* result in the following error:
+
+```
+# Assuming that `paket.exe` is not downloaded.
+
+> #load "gistfile1.fsx";;
+[Loading F:\gistfile1.fsx]
+
+error FS0082: Could not resolve this reference. Could not locate the assembly
+"paket.exe". Check to make sure the assembly exists on disk. If this reference
+is required by your code, you may get compilation errors. (Code=MSB3245)
+```
