@@ -42,7 +42,7 @@ Target "CompileFiles" (fun _ ->
     |> Fsc (fun options ->
         { options with
             Output = outputFile
-            FscTarget  = Library;
+            FscTarget = Library
             References = references }))
 
 Target "CopyAssemblyReferences" (fun _ ->
